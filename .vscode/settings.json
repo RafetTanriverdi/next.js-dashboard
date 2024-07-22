@@ -1,0 +1,4 @@
+{
+  "liveServer.settings.multiRootWorkspaceName": "nextjs-dashboard",
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}

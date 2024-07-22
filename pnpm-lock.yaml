@@ -28,10 +28,13 @@ importers:
         version: 2.1.1
       next:
         specifier: 15.0.0-canary.56
-        version: 15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704)(react@19.0.0-rc-f38c22b244-20240704)
+        version: 15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704)
       next-auth:
         specifier: 5.0.0-beta.19
-        version: 5.0.0-beta.19(next@15.0.0-canary.56)(react@19.0.0-rc-f38c22b244-20240704)
+        version: 5.0.0-beta.19(next@15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704)
+      path:
+        specifier: ^0.12.7
+        version: 0.12.7
       postcss:
         specifier: 8.4.38
         version: 8.4.38
@@ -605,6 +608,9 @@ packages:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
+  inherits@2.0.3:
+    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
+
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
@@ -820,6 +826,9 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
+  path@0.12.7:
+    resolution: {integrity: sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==}
+
   pg-int8@1.0.1:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}
     engines: {node: '>=4.0.0'}
@@ -917,6 +926,10 @@ packages:
 
   pretty-format@3.8.0:
     resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
+
+  process@0.11.10:
+    resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
+    engines: {node: '>= 0.6.0'}
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -1101,6 +1114,9 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  util@0.10.4:
+    resolution: {integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==}
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
@@ -1643,6 +1659,8 @@ snapshots:
       once: 1.4.0
       wrappy: 1.0.2
 
+  inherits@2.0.3: {}
+
   inherits@2.0.4: {}
 
   is-arrayish@0.3.2:
@@ -1732,13 +1750,13 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  next-auth@5.0.0-beta.19(next@15.0.0-canary.56)(react@19.0.0-rc-f38c22b244-20240704):
+  next-auth@5.0.0-beta.19(next@15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704):
     dependencies:
       '@auth/core': 0.32.0
-      next: 15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704)(react@19.0.0-rc-f38c22b244-20240704)
+      next: 15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704)
       react: 19.0.0-rc-f38c22b244-20240704
 
-  next@15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704)(react@19.0.0-rc-f38c22b244-20240704):
+  next@15.0.0-canary.56(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704):
     dependencies:
       '@next/env': 15.0.0-canary.56
       '@swc/helpers': 0.5.11
@@ -1810,6 +1828,11 @@ snapshots:
       lru-cache: 10.2.2
       minipass: 7.1.2
 
+  path@0.12.7:
+    dependencies:
+      process: 0.11.10
+      util: 0.10.4
+
   pg-int8@1.0.1: {}
 
   pg-protocol@1.6.1: {}
@@ -1845,8 +1868,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.1.1
-      postcss: 8.4.38
       yaml: 2.4.3
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
@@ -1890,6 +1914,8 @@ snapshots:
   preact@10.11.3: {}
 
   pretty-format@3.8.0: {}
+
+  process@0.11.10: {}
 
   queue-microtask@1.2.3: {}
 
@@ -2101,6 +2127,10 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
+  util@0.10.4:
+    dependencies:
+      inherits: 2.0.3
+
   webidl-conversions@3.0.1: {}
 
   whatwg-url@5.0.0:
@@ -2131,7 +2161,7 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.14.2(bufferutil@4.0.8)(utf-8-validate@6.0.3):
-    dependencies:
+    optionalDependencies:
       bufferutil: 4.0.8
       utf-8-validate: 6.0.3
 
