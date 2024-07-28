@@ -13,7 +13,11 @@ import {
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
 } from "../../ui/skeletons";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Home ',
+};
 export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
   const {
